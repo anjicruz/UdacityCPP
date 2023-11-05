@@ -1,8 +1,12 @@
 #include <iostream>
+#include <string>
+#include <vector>
 
-using namespace std;
 int main()
 {
-    cout << "Hello World\n";
+    std::vector<std::string> brothers{"David", "Ethan", "Adam"};
+    for(std::string const& brother : brothers) {
+        std::cout << "Hello " << brother << "\n";
+    } 
     return 0;
 }
